@@ -3,10 +3,10 @@ import React, { useState } from "react";
 
 function Item({ name, category }) {
 
-  const [isInCart, setIsInCart] = useState(false);
+  let [isInCart, setIsInCart] = useState(false)
 
   function handleIsInCartClick() {
-    setIsInCart((inCart) => !inCart);
+    setIsInCart(isInCart = !isInCart)
   }
 
   return (
@@ -19,3 +19,28 @@ function Item({ name, category }) {
 }
 
 export default Item;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const [isInCart, setIsInCart] = useState(false);
+
+// function handleIsInCartClick() {
+//   setIsInCart((inCart) => !inCart);
